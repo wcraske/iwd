@@ -1,0 +1,172 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
+    <style>
+        @font-face { 
+            font-family: 'akira'; src: url(fonts/akira_expanded/Akira.otf) format("opentype"); }
+        body {
+            background-image: radial-gradient(closest-side at 60% 60%, #6c25be, #b09cd4 );
+            cursor: url('cursor/woman.png') 13 19.5, move ;
+            margin: 0;
+            padding: 0;
+            font-family: 'akira', Arial, sans-serif;
+        }
+        
+       h2, h3, h4, h5, h6{
+
+           margin-top:30px;
+           margin-bottom:10px;
+          
+        }
+        
+        .bulletin {
+            width: 700px; /* Adjust the width as needed */
+            height: 200px; /* 100% of the viewport height */
+            background-color: #987cbc; /* Color for the rectangle */
+            margin-left: 300px; /* 100px from the left side */
+            margin-top: 150px; /* 10px down from the top */
+            
+            
+             
+        }
+        
+        .slideshowvert {
+            
+            max-width: 750px;
+            position:relative;
+            margin: auto;
+            margin-left: 1500px;
+            
+        }
+/*FIGURE THIS OUT MAKE IT UNDERNEATH*/
+        .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+        
+        .fade {
+        animation-name: fade;
+        animation-duration: 5s;
+        
+        }
+
+        @keyframes fade{
+            0%,100% { opacity: 0 }
+            50% { opacity: 1 }
+      
+        }
+
+
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #321f4c;
+            margin-right: 30px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            background-color: transparent;
+            opacity: 70%;
+            cursor: url('cursor/woman.png')13 19.5, move;
+        }
+    </style>
+    
+</head>
+    
+    
+    <body>    
+        <h1 style="font-size: 55px; text-align: center"><a href="homepage.html">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+        <h3 style="font-size: 35px; text-align: center">
+            <a href="team.html">TEAM</a> 
+            <a href="events.html">PAST EVENTS</a>
+            <a href="resources.html">RESOURCES</a>
+            <a href="news.html">NEWS</a>
+            <a href="contact.html">CONTACT US</a>
+       
+            
+        </h3>
+        
+        <!-- INSTAGRAM WIDGET MAKE IT LOOK BETTER  
+        <div class = "container">
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-9e292854-a5ff-4901-bb31-7dac3151bf70"></div>
+        </div>-->
+        
+        <div class = "bulletin">
+            <h2 style = "font-size: 30px; text-align: center; padding-top: 15px;">
+                BULLETIN BOARD:
+            </h2>
+            <ul style = "font-size: 20px; text-align: left;">
+                <li>COMING SOON !</li>
+            </ul>
+        </div>
+
+
+
+        <div class = "slideshowvert">
+            <div class="slides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="pictures/DSC04803.jpg" style="width:100%">
+              </div>
+              
+              <div class="slides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="pictures/DSC04727.jpg" style="width:100%">
+              </div>
+              
+              <div class="slides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="pictures/DSC05297.jpg" style="width:100%">
+              </div>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+        </div>
+
+
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("slides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+            </script>
+        
+
+        
+    </body>
+</html>
+    
