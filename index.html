@@ -21,7 +21,20 @@
            margin-bottom:10px;
           
         }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
         
+        .faq {
+            width: 30%; /* Adjust the width as needed */
+            height: 30vh; /* 100% of the viewport height */
+            background-color: #987cbc; /* Color for the rectangle */
+            margin: 20 10vh;
+       
+        }
+
         .bulletin {
             width: 25vw; /* Adjust the width as needed */
             height: 30vh; /* 100% of the viewport height */
@@ -37,9 +50,9 @@
         .slideshowvert {
             
             max-width: 30vw;
-            position: relative;
+            position:relative;
             margin: auto;
-            left: 25vw;
+          
             
         }
 /*FIGURE THIS OUT MAKE IT UNDERNEATH
@@ -68,7 +81,7 @@
 
 
         @media only screen and (max-width: 600px) {
-            .bulletin, .slideshowvert{
+            .bulletin, .slideshowvert, .title, .faq{
                 width: 100%;
             }
             .text {font-size: 11px}
@@ -109,7 +122,7 @@
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             <div class="elfsight-app-9e292854-a5ff-4901-bb31-7dac3151bf70"></div>
         </div>-->
-        
+    <div class = "container"> 
         <div class = "bulletin">
             <h2 style = "font-size: 30px; text-align: center; padding-top: 15px;">
                 BULLETIN BOARD:
@@ -118,6 +131,16 @@
                 <li>COMING SOON !</li>
             </ul>
         </div>
+    
+
+        <div class="faq">
+            <h2 style="font-size: 30px; text-align: center; padding-top: 15px;">FAQ :</h2>
+          
+                <!-- Add more FAQ items as needed -->
+            </ul>
+        </div>
+    </div>
+
 
      
 
