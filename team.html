@@ -1,48 +1,62 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER TEAM</title>
+    <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
     <style>
         @font-face { 
-            font-family: 'akira'; src: url(fonts/akira_expanded/Akira.otf) format("opentype"); }
+            font-family: 'akira'; src: url(fonts/matisse/matisse/matisse.otf) format("opentype"); }
         body {
-            background-image: radial-gradient(closest-side at 60% 60%, #6c25be, #b09cd4 );
-            cursor: url('cursor/woman.png') 13 19.5, move ;
+            background-color: #d4ccd9ff;
+            cursor: url('cursor/woman.png') 13 19.5, move;
             margin: 0;
             padding: 0;
             font-family: 'akira', Arial, sans-serif;
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
+        
+        .item1 {grid-area: header;            
+        }
+        .item2 {grid-area: left0;
             
         }
-
-        h1{
-
-            margin-top:100px;
-            margin-bottom:10px;
-
+        .item3 {grid-area: center0;
+            
         }
-        .photo{
-        
-            width: 30%;
-            position:relative;
-            margin: auto;
+        .item4 {grid-area: right0;
+           
+        }
+        .item5 {grid-area: left1;
+        }
+        .item6 {grid-area: center1;
+        }
+        .item7 {grid-area: right1;
+        }
+        .item8 {grid-area: footer;
+        background-color: #8e7cc3ff;}
+
+      
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'header header header '
+            'left0  center0 right0 '
+            'left1  center1  right1'
+            'footer footer  footer';
+
+            gap: 80px;
+            row-gap: 10px;
+            background-color: #d4ccd9ff;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
         }
 
-        .photo img {
-            width: 100%; /* Ensure the image scales within the container */
-            scale: 75%;
-            height: auto;
-        }
+    
 
-        .bio{
-            margin-top: 10px;
-
-
+        img {
+            width: 100%;
         }
 
         a {
@@ -50,7 +64,7 @@
             color: #321f4c;
             margin-right: 30px;
         }
-        
+
         a:hover {
             text-decoration: underline;
             background-color: transparent;
@@ -58,47 +72,139 @@
             cursor: url('cursor/woman.png')13 19.5, move;
         }
     </style>
-    
 </head>
-    <body>    
-        <h1 style="font-size: 55px; text-align: center"><a href="index.html">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
-        <h3 style="font-size: 35px; text-align: center">
-            <a href="team.html">TEAM</a> 
-            <a href="events.html">PAST EVENTS</a>
-            <a href="resources.html">RESOURCES</a>
-            <a href="news.html">NEWS</a>
-            <a href="contact.html">CONTACT US</a>
+<body>
 
-        <h1 style="font-size: 65px; text-align: center">THE TEAM</h1>
-        <div class="container">
-            <div class="photo">
-                <img src="pictures/yasmin.jpg">
-                <div class="bio">
-                    <p>Yasmin  -  She/her  -  Chair</p>
-                        <p>An author, actor and activist. Her full time job is currently working with the North Shore Women's Centre to provide gender based violence reduction program to high schools around BC. Her creative endeavours, be it writing children's books or theatre, are all focused around representation of marginalized groups & underrepresented family structures without that factor being the centre of the story. She holds an MA in Gender, Sexuality & Women's Studies from SFU and is excited to continue to work with her SFU peers on the International Women's Day March. 
-                            What does being part of the IWD team mean to Yasmin?
-                            I am so honoured to be chairing this committee again and to do my utmost to honour the intersections of women we represent in Vancouver. I want to make sure we celebrate women's achievements, represent women from all walks of life and continue to fight the abundance of struggles women face worldwide - all whilst recognizing self-identifying women's diversity.</p>
-                    </div>
-            </div>
-    
-            <div class="photo">
-                <img src="pictures/karissa.jpg">
-                <div class="bio">
-                    <p>Karissa  -  She/her  -  Public Relations Director</p>
-                    <p> Currently completeing her BA in International Studies at SFU with a focus on global politics, culture, and society. She is passionate about community activism, equity and sustainability measures, and awarness for the numerous issues that women and marginalized groups are facing around the world. She is also the News Editor at SFU's student newspaper, The Peak, where she curates diverse stories of student activism, local events, and community achievements.
-                        What does the March mean to Karissa?
-                        I'm beyond thrilled to return to the IWD Vancouver committee. We live in a diverse and beautiful community, but diverse voices are rarely adequately represented within media or our community. I'm passionate about platforming the voices of amazing community activists and the tireless work they do. Hosting the IWD march is an important step in the right direction.</p>
-                </div>
-            </div>
-    
-            <div class="photo">
-                <img src="pictures/megan.jpg">
-                <div class="bio">
-                    <p>Megan  -  She/her  -  Vice Chair</p>
-                    <p>Completed her MA in Gender, Sexuality & Women's Studies from SFU in 2022. Since graduating, Megan worked on the project team tasked with reimagining the Gender Clinic at BC Children's Hospital, and currently works with the Harm Reduction team at the BC Centre for Disease Control. What does being part of the IWD team mean to Megan? I'm so grateful to return to this committee and build on the amazing work we did last year. To me, IWD is about amplifying voices and opening our hearts to the experiences of others. It's also about taking steps forward and calling on our allies and those in power to commit to real change. I'm so excited for the march and can't wait to see you all there!</p>
-                </div>
-            </div>
+    <div class = "grid-container">
+
+        <div class = "item1">
+            <h1 style="font-size: 55px; text-align: center; "><a href="index.html">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+            <h3 style="font-size: 35px; text-align: center; background-color: #8970c8ff;">
+                <a href="team.html">TEAM</a> 
+                <a href="events.html">PAST EVENTS</a>
+                <a href="resources.html">RESOURCES</a>
+                <a href="news.html">NEWS</a>
+                <a href="contact.html">CONTACT US</a>
+            </h3>
+                <br>
+            <h3 style="font-size: 40px; text-align: center; color: #321f4c; ">Vancouver Committee</h3>
         </div>
-    </body>
+
+        <div class = "item2">
+            <img src="pictures/Yasmin1.jpg" alt="yasmin" style="width: 100%; height: auto;"
+            <p>Yasmin (she/her)<br> 
+                Chair <br>
+                Yasmin is an author, actor and activist. Her full time job is currently working with the North Shore Women's Centre to provide gender based violence reduction program to high schools around BC. Her creative endeavours, be it writing children's books or theatre, are all focused around representation of marginalized groups & underrepresented family structures without that factor being the centre of the story. She holds an MA in Gender, Sexuality & Women's Studies from SFU.
+                <br>
+                <br>
+                What does being part of the IWD team mean to Yasmin? <br>
+                I am so honoured to be chairing this committee again and to do my utmost to honour the intersections of women we represent in Vancouver. I want to make sure we celebrate women's achievements, represent women from all walks of life and continue to fight the abundance of struggles women face worldwide - all whilst recognizing self-identifying women's diversity.
+                </p>
+        </div>
+
+        <div class = "item3">
+            <img src="pictures/Megan1.jpg" alt="megan" style="width: 100%; height: auto;"
+            <p>Megan (she/her) <br>
+                Vice-Chair <br>
+                Megan completed her MA in Gender, Sexuality & Women's Studies from SFU in 2022. Since graduating, Megan worked on the project team tasked with reimagining the Gender Clinic at BC Children's Hospital, and currently works with the Harm Reduction team at the BC Centre for Disease Control. 
+                <br>
+                <br>
+                What does being part of the IWD team mean to Megan? <br>
+                I'm so grateful to return to this committee and build on the amazing work we did last year. To me, IWD is about amplifying voices and opening our hearts to the experiences of others. It's also about taking steps forward and calling on our allies and those in power to commit to real change. I'm so excited for the march and can't wait to see you all there!
+                
+
+            </p>
+
+        </div>
+
+        <div class = "item4">
+            <img src="pictures/Oreofeoluwa1.jpeg" alt="oreofeoluwa" style="width: 100%; height: auto;"
+            <p>Oreofeoluwa (she/her) <br>
+                Administrative Director <br>
+                Oreofeoluwa has a bachelor's degree in International relations and diplomacy followed by a masters degree in gender, sexuality and women's studies. Oreofeoluwa currently works as the Lead Researcher and Project Coordinator - gender based violence prevention in high schools where she delivers evidence based prevention programs to youths in high school and communities whilst educating adults about the necessity of these programs. Oreofeoluwa's academic, career and volunteer endeavours- past and present revolve around her dedication to creating spaces and adding value to minorities. 
+                <br>
+                <br>
+                What does being part of IWD team mean to Oreofeoluwa? <br>
+                As a visibly racialized migrant woman, being a member of the IWD Vancouver Committee is an avenue to represent my community. An opportunity to speak at tables where we often do not get the chance to. I am very thankful and excited to be able to be a part of something that symbolizes the coming together of voices that are often unheard.
+                
+
+            </p>
+        </div>
+
+        <div class = "item5">
+            <img src = "pictures/Gülce1.jpg" alt="Gülce" style="width: 100%; height: auto;"
+            <p>Gülce (she/her) <br>
+                Operations Director<br>
+                Gülce is currently completing her MA in Developmental Psychology at SFU, focusing on how the community contributes to child and family well-being. She has also worked with parents and children from underrepresented immigrant groups to support their journey by helping them to create their community with appropriate resources as a part of Burnaby Family Life Centre.
+                <br>
+                <br>
+                What does being part of the IWD team mean to Gülce? <br>
+                I am so happy and honoured to be a member of the IWD Vancouver Committee this year because it represents a powerful and meaningful opportunity for me to be a voice for those who may not have one, to raise awareness about women's rights and gender equality, and to take concrete actions to make a positive difference in women’s lives. Being part of this team is a means for me to stand up for women's rights, equality, and safety, and to send a message that women should be supported, respected, and empowered.
+                <br><br><br><br>
+                Website developed by W. Craske. 
+
+
+            </p>
+
+        </div>
+
+        <div class = "item6">
+            <img src = "pictures/karissa1.jpg" alt="karissa" style="width: 100%; height: auto;"
+            <p>Karissa (she/her) <br>
+                Public Relations Director<br>
+                Karissa is currently completing her BA in International Studies at SFU with a focus on global politics, culture, and society. She is passionate about community activism, equity and sustainability measures, and awareness for the numerous issues that women and marginalized groups are facing around the world. She is also the News Editor at SFU's student newspaper, The Peak, where she curates diverse stories of student activism, local events, and community achievements.
+                <br>
+                <br>
+                What does being part of the IWD team mean to Karissa?
+                I'm beyond thrilled to return to the IWD Vancouver committee. We live in a diverse and beautiful community, but diverse voices are rarely adequately represented within media or our community. I'm passionate about platforming the voices of amazing community activists and the tireless work they do. Hosting the IWD march is an important step in the right direction.
+                
+
+            </p>
+
+        </div>
+
+        <div class = "item7">
+            <img src = "pictures/spencer1.jpeg" alt="spencer" style="width: 100%; height: auto;"
+            <p>spencer lee 李丹彤 (they/them/佢keoi5) <br>
+                Content Director <br>
+                spencer is a first-generation Han Chinese-Canadian settler living on traditional, unceded, stolen lands of the Skwxwú7mesh (Squamish), Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh), Stó:lō, and xʷməθkwəy̓əm (Musqueam) Nations. they have been most active in their communities as a youth-centred facilitator and educator, and centre racialized, queer lived experiences in the work that they do. they currently serve the community as the project coordinator for Roundtable Educational Society, which is an emerging charity that seeks to explore and build a new model for charities that provides more equitable access to resources for grassroots groups working to improve the lives of their communities in BC & Canada.
+                <br>
+                <br>
+                What does being part of the IWD team mean to spencer?
+                for most of this year, feelings of grief and helplessness have been heavy. my involvement means being in community to hold space for heartbreak, for healing, and for imaginative futures. to me, being involved in the IWD committee is where i am mobilized, hopeful, and joyful, as i stand in solidarity with my local and global community coming together for the sake of collective liberation.
+                
+
+            </p>
+
+        </div>
+
+        <div class = "item8">
+            
+            <p style = "text-align: right; font-size: small; color:#321f4c">We acknowledge that we are located on the Unceded Coast 
+                Salish Territories of the xʷməθkʷəy̓əm (Musqueam), Səl̓ílwətaʔ/<br>
+                Selilwitulh (Tsleil-Waututh), Kwikwitlem (Coquitlam), Kwantlen, Katzie, 
+                Semiahmoo, and Skwxwú7mesh Úxwumixw (Squamish) Peoples.<br> We 
+                seek to support the different strategies that Indigenous peoples are 
+                using to protect their land and their communities, <br>and we commit to 
+                dedicating time and resources to working in solidarity.</p>
+
+                <a href="https://www.instagram.com/iwdmarchvan/"><img src = "pictures/ig.png" alt = "ig" style = "width: 2%; height: auto; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100090451010747&mibextid=LQQJ4d"><img src = "pictures/facebook.png" alt = "face" style = "width: 2%; height: auto; "> </a>
+                <a href="https://linktr.ee/iwdvancouver"><img src = "pictures/link.png" alt = "link" style = "width: 2%; height: auto; "></a>
+
+
+        </div>
+          
+
+      
+
+
+              
+
+        </div>
+
+
+
+
+</body>
 </html>
-    
