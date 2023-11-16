@@ -6,7 +6,7 @@
     <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
     <style>
         @font-face { 
-            font-family: 'akira'; src: url(fonts/akira_expanded/Akira.otf) format("opentype"); }
+            font-family: 'akira'; src: url(fonts/matisse/matisse/matisse.otf) format("opentype"); }
         body {
             background-color: #d4ccd9ff;
             cursor: url('cursor/woman.png') 13 19.5, move;
@@ -16,23 +16,27 @@
         }
         
         .item1 {grid-area: header;
-        background-color: aqua;}
-        .item2 {grid-area: left0;
-        background-color: blue;}
+        }
+        .item2 {grid-area: left0;   
+        background-color: #b4a7d6ff;}
         .item3 {grid-area: left1;
-        background-color: aquamarine;}
+        ;}
         .item4 {grid-area: center0;
-        background-color: rebeccapurple;}
+        ;}
         .item5 {grid-area: right0;
-        background-color: rgb(253, 127, 255);}
+        ;}
         .item6 {grid-area: right1;
-        background-color: rgb(153, 139, 51);}
+        ;}
         .item7 {grid-area: center1;
-        background-color: rgb(82, 153, 51);}
+       ;}
         .item8 {grid-area: center2;
-        background-color: rebeccapurple;}
-       
-        
+        ;}
+        .item9 {grid-area: right2;
+       ;}       
+        .item10 {grid-area: left2;
+        ;} 
+        .item11{grid-area: footer;
+        }
         
 
         .grid-container{
@@ -40,12 +44,16 @@
             grid-template-areas: 
             'header header header header header'
             'left0 left0 center0 right0 right0'
-            'left1 left1 center1 right0 right0'
-            'left1 left1 center2 right1 right1';
+            'left1 left1 center1 right1 right1'
+            'left1 left1 right2 right2 right2'
+            'left2 left2   .       .      .'
+            'footer footer footer footer footer';
+
             gap: 20px;
             background-color: #d4ccd9ff;
-            padding: 50px;
-
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
         }
 
         .fade {
@@ -95,8 +103,8 @@
     <div class = "grid-container">
 
         <div class = "item1">
-            <h1 style="font-size: 55px; text-align: center"><a href="index.html">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
-            <h3 style="font-size: 35px; text-align: center">
+            <h1 style="font-size: 55px; text-align: center; "><a href="index.html">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+            <h3 style="font-size: 35px; text-align: center; background-color: #8970c8ff;">
                 <a href="team.html">TEAM</a> 
                 <a href="events.html">PAST EVENTS</a>
                 <a href="resources.html">RESOURCES</a>
@@ -105,14 +113,24 @@
             </h3>
         </div>
 
-        <div class = "item2">
-            <h3>BULLETIN BOARD :</h3>
-            <u1>
-                <li>march</li>
-                <li>in</li>
-                <li>Vancouver</li>
-            </u1>
+        <div class="item2" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; background-color: #d4ccd9ff; padding-bottom: 100px;">
+                <img src="pictures/IWD.png" alt="logo" style="width: 35%; height: auto;">
+
+            <h3 style="padding-top: 75px; font-size: 35px;">K'EMK'EMELÁÝ VANCOUVER CANADA </h3>
+            </div>
+            <h3 style="font-size: 35px; margin-left: 10px; padding-top: 40px">2024 BULLETIN BOARD:</h3>
+            <ul style="font-size: 25px; text-align: left;">
+                <li>International Women's Day: March 8, 2024</li>
+                <br>
+                <li>IWD Vancouver March: Saturday, March 9, 2024 from 12:00 - 4:00 pm at the šxʷƛ̓ənəq Xwtl'e7énḵ Square (Vancouver Art Gallery North Plaza).</li>
+                <br>
+                <li>2024 speakers list coming soon!</li>
+    
+            </ul>
         </div>
+        
+        
 
         <div class = "item3">
             <h2>What is IWD Vancouver?</h2>
@@ -123,13 +141,11 @@
             <h3>Vision</h3>
             <p>We aim to host the international women's day march every year in March as well as promote events hosted by grassroots organisations around Vancouver. We want to ensure everything we do creates a safe space for women and highlight the intersectional issues we face.</p>                           
             <h3>Goals</h3>
-            <p>We will plan the international women's day march every year. We will call on our allies to recognise our struggles and fight alongside us. We will promote other events from our communities that aims to achieve equity. We will create a space for volunteers that is safe and inclusive. We will create a platform where we can educate and inform those in our community of the history, battles and victories of the women’s equity movement.</p>
-                
+            <p>We will plan the international women's day march every year. We will call on our allies to recognise our struggles and fight alongside us. We will promote other events from our communities that aims to achieve equity. We will create a space for volunteers that is safe and inclusive. We will create a platform where we can educate and inform those in our community of the history, battles and victories of the women's equity movement.</p>
+                 
         </div>
 
-        <div class = "item4">
-            <img src="pictures/IWD.png" alt="logo">
-        </div>
+        
 
         <div class = "item5">
             <div class = "slideshowvert">
@@ -155,7 +171,16 @@
                 <p align = "right"></p>
     	     
             </div>
+
+            <div class = "item9">
+                <img src="pictures/miniwomen1.png" alt="womenminiaml" >
+            </div>
+
+            <div class = "item11">
+
+            </div>
             
+      
             
 
         </div>
