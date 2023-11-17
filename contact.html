@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
+    <style>
+        @font-face { 
+            font-family: 'akira'; src: url(fonts/matisse/matisse/matisse.otf) format("opentype"); }
+        body {
+            background-color: #d4ccd9ff;
+            cursor: url('cursor/woman.png') 13 19.5, move;
+            margin: 0;
+            padding: 0;
+            font-family: 'akira', Arial, sans-serif;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #321f4c;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8970c8ff;
+        }
+        
+        .item1 {grid-area: header;            
+        }
+        .item2 {grid-area: left0;
+        }
+        .item3 {grid-area: center0;
+        }
+        .item4 {grid-area: right0;
+        }
+        .item5 {grid-area: left1;
+            
+        }
+        .item6 {grid-area: center1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item7 {grid-area: right1;
+        }
+        .item8 {grid-area: footer;
+        background-color: #8e7cc3ff;}
+
+      
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'header header header '
+            'left0  center0 right0 '
+            'left1  center1  right1'
+            'footer footer  footer';
+
+            gap: 80px;
+            row-gap: 10px;
+            background-color: #d4ccd9ff;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+        }
+
+    
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #321f4c;
+            margin-right: 30px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: transparent;
+            opacity: 70%;
+            cursor: url('cursor/woman.png')13 19.5, move;
+        }
+    </style>
+</head>
+<body>
+
+    <div class = "grid-container">
+
+        <div class = "item1">
+            <h1 style="font-size: 55px; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+            <h3 style="font-size: 35px; text-align: center; background-color: #8970c8ff;">
+                <a href="./team">TEAM</a> 
+                <a href="./events">PAST EVENTS</a>
+                <a href="./resources">RESOURCES</a>
+                <a href="./news">NEWS</a>
+                <a href="./contact">CONTACT US</a>
+            </h3>
+                <br>
+        </div>
+
+        <div class = "item2">
+            <img src="pictures/DSC05396.jpg" alt="team" style="width: 30vw; height: auto;">
+        </div>
+
+        <div class = "item3">
+            <h3 style="font-size: 25px;"> CONTACT US</h3>
+            <p>Do you have questions about volunteer opportunities or upcoming events? <br>
+                Get in touch! 
+                </p>
+
+                
+        </div>
+
+        <div class="item4">
+            <h3 style="font-size: 25px;">EMAIL</h3>
+            <p>
+                Leave a message for the IWD Team by filling out this form.<br>
+                <button onclick="window.location.href='https://forms.gle/jVBgfD5Jy2x1azxQ6'">Submit Form</button><br>
+                Media Contact: Submit a media request by emailing us at <a href = "mailto: internationalwomensdaymarch@gmail.com">internationalwomensdaymarch@gmail.com</a>
+            </p>
+        </div>
+
+        <div class = "item5">
+            
+        </div>
+
+        <div class ="item6">
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-a50d7a49-c07e-49b9-abc2-f85480d331e7" data-elfsight-app-lazy></div>
+        </div>
+
+        <div class = "item8">
+            
+            <p style = "text-align: right; font-size: small; color:#321f4c">We acknowledge that we are located on the Unceded Coast 
+                Salish Territories of the xʷməθkʷəy̓əm (Musqueam), Səl̓ílwətaʔ/<br>
+                Selilwitulh (Tsleil-Waututh), Kwikwitlem (Coquitlam), Kwantlen, Katzie, 
+                Semiahmoo, and Skwxwú7mesh Úxwumixw (Squamish) Peoples.<br> We 
+                seek to support the different strategies that Indigenous peoples are 
+                using to protect their land and their communities, <br>and we commit to 
+                dedicating time and resources to working in solidarity.</p>
+
+                <a href="https://www.instagram.com/iwdmarchvan/"><img src = "pictures/ig.png" alt = "ig" style = "width: 2%; height: auto; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100090451010747&mibextid=LQQJ4d"><img src = "pictures/facebook.png" alt = "face" style = "width: 2%; height: auto; "> </a>
+                <a href="https://linktr.ee/iwdvancouver"><img src = "pictures/link.png" alt = "link" style = "width: 2%; height: auto; "></a>
+
+
+        </div>
+
+
+    
+    
+    
+    
+    
+    </div>
+
+
+
+
+</body>
+</html>
