@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
     <style>
-        @font-face {
-            font-family: 'akira';
-            src: url(fonts/matisse/matisse/matisse.otf) format("opentype");
-        }
-
+        @font-face { 
+            font-family: 'rubik'; src: url(fonts/Rubik/static/Rubik-Black.ttf) format("truetype"); }
         body {
             background-color: #d4ccd9ff;
             cursor: url('cursor/woman.png') 13 19.5, move;
             margin: 0;
             padding: 0;
-            font-family: 'akira', Arial, sans-serif;
+            font-family: 'rubik', Arial, sans-serif;
         }
 
-        .item1 {
-            grid-area: header;
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-areas:
+                    'header header header header header'
+                    'left0 left0 left0 left0 left0'
+                    'left1 left1 left1 left1 left1'
+                    'left1 left1 center0 right0 right0'
+                    'left2 left2 center1 right1 right1'
+                    'footer footer footer footer footer';
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
-
-        .item2 {
-            grid-area: left0;
+        
+        .item1 {grid-area: header;
         }
-
-        .item3 {
-            grid-area: center0;
-        }
-
-        .item4 {
-            grid-area: right0;
-        }
-
-        .item5 {
-            grid-area: left1;
-        }
-
-        .item6 {
-            grid-area: center1;
-        }
-
-        .item7 {
-            grid-area: right1;
-        }
-
-        .item8 {
-            grid-area: footer;
+        .item2 {grid-area: left0;   
+        background-color: #b4a7d6ff;}
+        .item3 {grid-area: left1;
+        ;}
+        .item4 {grid-area: center0;
+        ;}
+        .item5 {grid-area: right0;
+        ;}
+        .item6 {grid-area: right1;
+        ;}
+        .item7 {grid-area: center1;
+       ;}
+        .item8 {grid-area: center2;
+        ;}
+        .item9 {grid-area: right2;
+       ;}       
+        .item10 {grid-area: left2;
+        ;} 
+        .item11{grid-area: footer;
             background-color: #8e7cc3ff;
         }
+        
 
-        .grid-container {
+        .grid-container{
             display: grid;
-            grid-template-areas: 'header header header ' 'left0  center0 right0 ' 'left1  center1  right1' 'footer footer  footer';
-            gap: 80px;
-            row-gap: 10px;
+            grid-template-areas: 
+            'header header header header header'
+            'left0 left0 center0 right0 right0'
+            'left1 left1 center1 right1 right1'
+            'left1 left1 right2 right2 right2'
+            'left2 left2   .       .      .'
+            'footer footer footer footer footer';
+
+            gap: 20px;
             background-color: #d4ccd9ff;
             padding-left: 50px;
             padding-right: 50px;
             padding-top: 10px;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 5s;
+        }
+
+        @keyframes fade {
+            0%,100% { opacity: 0 }
+            50% { opacity: 1 }
+        }
+
+
+        .slideshowvert {
+            grid-area: slideshowvert;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slides {
+            width: 100%;
+            display: none;
         }
 
         img {
@@ -77,64 +109,147 @@
             text-decoration: underline;
             background-color: transparent;
             opacity: 70%;
-            cursor: url('cursor/woman.png') 13 19.5, move;
+            cursor: url('cursor/woman.png')13 19.5, move;
         }
     </style>
 </head>
-
 <body>
 
-    <div class="grid-container">
+    <div class = "grid-container">
 
-        <div class="item1">
-            <h1 style="font-size: 55px; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br />VANCOUVER</a> </h1>
+        <div class = "item1">
+            <h1 style="font-size: 55px; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
             <h3 style="font-size: 35px; text-align: center; background-color: #8970c8ff;">
-                <a href="./team">TEAM</a>
+                <a href="./team">TEAM</a> 
                 <a href="./events">PAST EVENTS</a>
                 <a href="./resources">RESOURCES</a>
                 <a href="./news">NEWS</a>
                 <a href="./contact">CONTACT US</a>
             </h3>
-            <br>
         </div>
 
-        <div class="item3">
-            <h2> hey stop that, get outta here</h2>
+        <div class="item2" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; background-color: #d4ccd9ff; padding-bottom: 100px;">
+                <img src="pictures/IWD.png" alt="logo" style="width: 35%; height: auto;">
+
+            <h3 style="padding-top: 75px; font-size: 35px;">K'EMK'EMELÁÝ VANCOUVER CANADA </h3>
+            </div>
+            <h3 style="font-size: 35px; margin-left: 10px; padding-top: 40px">2024 BULLETIN BOARD:</h3>
+            <ul style="font-size: 25px; text-align: left;">
+                <li>International Women's Day: March 8, 2024</li>
+                <br>
+                <li>IWD Vancouver March: Saturday, March 9, 2024 from 12:00 - 4:00 pm at the šxʷƛ̓ənəq Xwtl'e7énḵ Square (Vancouver Art Gallery North Plaza).</li>
+                <br>
+                <li>2024 speakers list coming soon!</li>
+    
+            </ul>
+        </div>
+        
+        
+
+        <div class = "item3">
+            <h2>What is IWD Vancouver?</h2>
+            <h3>Mission statement</h3>
+            <p>International Women's Day March Vancouver works to celebrate, amplify and fight alongside the diversity of women in our community to achieve equity and create awareness of issues self-identifying women in Vancouver face.</p>
+            <h3>Values</h3>
+            <p>We stand for equity, and recognise intersectionality and diversity. These are often empty words, but in everything we do we strive to consider how each of those key words affect the individual communities that make up our larger community of self-identified women.</p>              
+            <h3>Vision</h3>
+            <p>We aim to host the international women's day march every year in March as well as promote events hosted by grassroots organisations around Vancouver. We want to ensure everything we do creates a safe space for women and highlight the intersectional issues we face.</p>                           
+            <h3>Goals</h3>
+            <p>We will plan the international women's day march every year. We will call on our allies to recognise our struggles and fight alongside us. We will promote other events from our communities that aims to achieve equity. We will create a space for volunteers that is safe and inclusive. We will create a platform where we can educate and inform those in our community of the history, battles and victories of the women's equity movement.</p>
+                 
         </div>
 
-        <div id="hidden" style="display: none;">
-            <img src="pictures/cat.gif" alt="Secret Picture">
-            <p>if u find the cat, comment "i love cats on our instagram!!"</p>
+        
+
+        <div class = "item5">
+            <div class = "slideshowvert">
+                <div class="slides fade">
+                    <div class="numbertext"></div>
+                    <img src="pictures/DSC04803.jpg" style="width:100%">
+                  </div>
+
+                  <div class="slides fade">
+                    <div class="numbertext"></div>
+                    <img src="pictures/DSC04727.jpg" style="width:100%">
+                  </div>
+
+                  <div class="slides fade">
+                    <div class="numbertext"></div>
+                    <img src="pictures/DSC05297.jpg" style="width:100%">
+                  </div>
+
+                  </div>
+                  <br>
+
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+            </div>
+            </div>   
+
+            <div class = "item6">
+                <p>"We have the human right to protest here and with so many injustices worldwide, isn't it our duty to do what others aren't able to do - what others have been imprisoned for?"</p>
+                <p align = "right"> - Yasmin Vjes Simsek,<br> IWD Vancouver Chair</p>    
+                <p align = "right"></p>
+    	     
+            </div>
+
+            <div class = "item9">
+                <img src="pictures/miniwomen1.png" alt="womenminiaml" >
+            </div>
+
+         
+
+            <div class = "item11">
+            
+                <p style = "text-align: right; font-size: small; color:#321f4c">We acknowledge that we are located on the Unceded Coast 
+                    Salish Territories of the xʷməθkʷəy̓əm (Musqueam), Səl̓ílwətaʔ/<br>
+                    Selilwitulh (Tsleil-Waututh), Kwikwitlem (Coquitlam), Kwantlen, Katzie, 
+                    Semiahmoo, and Skwxwú7mesh Úxwumixw (Squamish) Peoples.<br> We 
+                    seek to support the different strategies that Indigenous peoples are 
+                    using to protect their land and their communities, <br>and we commit to 
+                    dedicating time and resources to working in solidarity.</p>
+    
+                    <a href="https://www.instagram.com/iwdmarchvan/"><img src = "pictures/ig.png" alt = "ig" style = "width: 2%; height: auto; "></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090451010747&mibextid=LQQJ4d"><img src = "pictures/facebook.png" alt = "face" style = "width: 2%; height: auto; "> </a>
+                    <a href="https://linktr.ee/iwdvancouver"><img src = "pictures/link.png" alt = "link" style = "width: 2%; height: auto; "></a>
+    
+    
+            </div>
+            
+      
+            
+
         </div>
 
-    </div>
+
+
+
+   
 
     <script>
-        // Function to handle the key sequence detection
-        function handleKeySequence(event) {
-            const codeSequence = ["KeyC", "KeyA", "KeyT"];
-            const currentKey = event.code;
-
-            if (currentKey === codeSequence[sequenceIndex]) {
-                sequenceIndex++;
-
-                if (sequenceIndex === codeSequence.length) {
-                    // Code sequence complete, show the hidden picture
-                    document.getElementById("hidden").style.display = "block";
-                }
-            } else {
-                // Reset the sequence if a wrong key is pressed
-                sequenceIndex = 0;
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
             }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
-
-        // Initialize sequence index
-        let sequenceIndex = 0;
-
-        // Add event listener for key presses
-        document.addEventListener("keydown", handleKeySequence);
     </script>
 
 </body>
-
 </html>
