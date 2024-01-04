@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
+    <link rel="icon" href="/path/to/favicon.ico">
     <style>
         @font-face { 
             font-family: 'rubik'; src: url(fonts/Rubik/static/Rubik-Black.ttf) format("truetype"); }
@@ -15,19 +16,7 @@
             font-family: 'rubik', Arial, sans-serif;
         }
 
-        @media screen and (max-width: 768px) {
-            .grid-container {
-                grid-template-areas:
-                    'header header header header header'
-                    'left0 left0 left0 left0 left0'
-                    'left1 left1 left1 left1 left1'
-                    'left1 left1 center0 right0 right0'
-                    'left2 left2 center1 right1 right1'
-                    'footer footer footer footer footer';
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-        }
+
         
         .item1 {grid-area: header;
         }
@@ -52,6 +41,20 @@
         .item11{grid-area: footer;
             background-color: #8e7cc3ff;
         }
+
+        @media screen and (max-width: 768px) {
+        /* Adjustments for smaller screens */
+
+        .grid-container {
+            grid-template-areas:
+                'header header'
+                'left0 center0'
+                'right0 left1'
+                'left1 right2'
+                'left2 .'
+                'footer footer';
+        }
+    }
         
 
         .grid-container{
