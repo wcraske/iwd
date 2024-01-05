@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://vancouverwomensday.ca/
+Sitemap: https://vancouverwomensday.ca/sitemap.xml
