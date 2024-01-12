@@ -24,7 +24,9 @@
 
 
         
-        .item1 {grid-area: header;            
+        .item1 {grid-area: header;
+            font-size: 1vw; 
+            text-align: center;
         }
         .item2 {grid-area: left0;
             
@@ -107,7 +109,8 @@
                 'left1'
                 'center1'
                 'right1'
-                'center2';
+                'center2'
+                'footer';
 
                 gap: 2%;
             row-gap: 0.5vw;
@@ -116,6 +119,31 @@
             padding-right: 2%;
             padding-top: 1%;
             }
+
+            .item1{
+                font-size: 2vw;
+            }
+            .item2 img,
+                .item3 img,
+                .item4 img,
+                .item5 img,
+                .item6 img,
+                .item7 img {
+                    width: 50%; /* Adjust the width of images to make them smaller */
+                    height: auto;
+                    display: block; /* Center the image horizontally */
+                    margin: 0 auto; /* Center the image horizontally */
+                    
+                }
+                .item1 a {
+             font-size: 3vw; /* Adjust the font size of the links inside item1 on mobile */
+                }
+
+                p{
+                    font-size: 3vw;
+                }
+
+            
         }
     </style>
 </head>
@@ -124,7 +152,7 @@
     <div class = "grid-container">
 
         <div class = "item1">
-            <h1 style="font-size: 3vw; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+            <h1 ><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
             <h3 style="font-size: 2vw; text-align: center; background-color: #8970c8ff;">
                 <a href="./team">TEAM</a> 
                 <a href="./events">PAST EVENTS</a>
@@ -133,11 +161,11 @@
                 <a href="./contact">CONTACT US</a>
             </h3>
                 <br>
-            <h3 style="font-size: 2vw; text-align: center; color: #321f4c; ">Vancouver Committee</h3>
+            <h3 style="font-size: 2.5vw; text-align: center; color: #321f4c; ">Vancouver Committee</h3>
         </div>
 
         <div class = "item2">
-            <img src="pictures/yas_1good.jpg" alt="yasmin" style="width: 100%; height: auto;">
+            <img src="pictures/yas_1good.jpg" alt="yasmin">
             <p> <b>Yasmin (she/her) </b> <br> 
                 Chair <br>
                 Yasmin is an author, actor and activist. Her full time job is currently working with the North Shore Women's Centre to provide gender based violence 
@@ -154,7 +182,7 @@
         </div>
 
         <div class = "item3">
-            <img src="pictures/Megan1.jpg" alt="megan" style="width: 100%; height: auto;"
+            <img src="pictures/Megan1.jpg" alt="megan">
             <p> <b>Megan (she/her) </b> <br>
                 Vice-Chair <br>
                 Megan completed her MA in Gender, Sexuality & Women's Studies from SFU in 2022. Since graduating, Megan worked on the project team tasked with reimagining the Gender Clinic at BC Children's Hospital, and currently works with the Harm Reduction team at the BC Centre for Disease Control. 
@@ -169,7 +197,7 @@
         </div>
 
         <div class = "item4">
-            <img src="pictures/oreofe_1good.jpg" alt="oreofeoluwa" style="width: 100%; height: auto;"
+            <img src="pictures/oreofe_1good.jpg" alt="oreofeoluwa">
             <p> <b>Oreofeoluwa (she/her) </b> <br>
                 Administrative Director <br>
                 Oreofeoluwa has a bachelor's degree in International relations and diplomacy followed by a masters degree in gender, sexuality and 
@@ -189,7 +217,7 @@
         </div>
 
         <div class = "item5">
-            <img src = "pictures/gulche_1good.jpg" alt="Gülce" style="width: 100%; height: auto;"
+            <img src = "pictures/gulche_1good.jpg" alt="Gülce" >
             <p> <b>Gülce (she/her)</b> <br>
                 Operations Director<br>
                 Gülce is currently completing her MA in Developmental Psychology at SFU, focusing on how the community contributes to child and 
@@ -211,7 +239,7 @@
         </div>
 
         <div class = "item6">
-            <img src = "pictures/karissa1.jpg" alt="karissa" style="width: 100%; height: auto;"
+            <img src = "pictures/karissa1.jpg" alt="karissa" >
             <p> <b>Karissa (she/her)</b> <br>
                 Public Relations Director<br>
                 Karissa is currently completing her BA in International Studies at SFU with a focus on global politics, culture, and society. 
@@ -231,7 +259,7 @@
         </div>
 
         <div class = "item7">
-            <img src = "pictures/spencer1.jpeg" alt="spencer" style="width: 100%; height: auto;"
+            <img src = "pictures/spencer1.jpeg" alt="spencer" >
             <p> <b>spencer lee 李丹彤 (they/them/佢keoi5) </b> <br>
                 Content Director <br>
                 spencer is a first-generation Han Chinese-Canadian settler living on traditional, unceded, stolen lands of the Skwxwú7mesh (Squamish), Səl̓ílwətaʔ/Selilwitulh 
