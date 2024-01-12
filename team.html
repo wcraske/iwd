@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pictures/favicon.ico">
     <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
     <style>
+        
         @font-face { 
             font-family: 'Sans'; src: url(fonts/bcsansfont_web/BcSansFont_Web/2023_03_14_BCSans-Light_2g.otf) format("OpenType");
         }
@@ -15,6 +17,12 @@
             padding: 0;
             font-family: 'bcsans', Arial, sans-serif;
         }
+
+       
+
+
+
+
         
         .item1 {grid-area: header;            
         }
@@ -38,6 +46,10 @@
         .item8 {grid-area: footer;
         background-color: #8e7cc3ff;}
 
+
+
+
+
       
 
         .grid-container{
@@ -49,13 +61,15 @@
             'center2 center2 center2'
             'footer footer  footer';
 
-            gap: 80px;
-            row-gap: 10px;
+            gap: 2%;
+            row-gap: 0.5vw;
             background-color: #d4ccd9ff;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 10px;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 1%;
         }
+
+        
 
     
 
@@ -66,7 +80,7 @@
         a {
             text-decoration: none;
             color: #321f4c;
-            margin-right: 30px;
+            margin-right: 2%;
         }
 
         a:hover {
@@ -79,6 +93,30 @@
         p a {
             margin-right: 0;
         }
+
+        @media (max-width: 600px){
+
+       
+            .grid-container{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                'header'
+                'left0'
+                'center0'
+                'right0'
+                'left1'
+                'center1'
+                'right1'
+                'center2';
+
+                gap: 2%;
+            row-gap: 0.5vw;
+            background-color: #d4ccd9ff;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 1%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,8 +124,8 @@
     <div class = "grid-container">
 
         <div class = "item1">
-            <h1 style="font-size: 55px; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
-            <h3 style="font-size: 35px; text-align: center; background-color: #8970c8ff;">
+            <h1 style="font-size: 3vw; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+            <h3 style="font-size: 2vw; text-align: center; background-color: #8970c8ff;">
                 <a href="./team">TEAM</a> 
                 <a href="./events">PAST EVENTS</a>
                 <a href="./resources">RESOURCES</a>
@@ -95,11 +133,11 @@
                 <a href="./contact">CONTACT US</a>
             </h3>
                 <br>
-            <h3 style="font-size: 40px; text-align: center; color: #321f4c; ">Vancouver Committee</h3>
+            <h3 style="font-size: 2vw; text-align: center; color: #321f4c; ">Vancouver Committee</h3>
         </div>
 
         <div class = "item2">
-            <img src="pictures/yas_1good.jpg" alt="yasmin" style="width: 100%; height: auto;"
+            <img src="pictures/yas_1good.jpg" alt="yasmin" style="width: 100%; height: auto;">
             <p> <b>Yasmin (she/her) </b> <br> 
                 Chair <br>
                 Yasmin is an author, actor and activist. Her full time job is currently working with the North Shore Women's Centre to provide gender based violence 

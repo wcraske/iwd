@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pictures/favicon.ico">
     <title>INTERNATIONAL WOMEN'S DAY MARCH VANCOUVER</title>
     <style>
         @font-face { 
@@ -16,10 +17,30 @@
             font-family: 'bcsans', Arial, sans-serif;
         }
 
+        @media screen and (max-width: 375px) {
+            .grid-container {
+                grid-template-areas: 
+                    'header'
+                    'left0'
+                    'center0'
+                    'left1'
+                    'center1'
+                    'right1'
+                    'left2'
+                    'center2'
+                    'right2'
+                    'footer';
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
         button {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding:  1vw 2vw; /* Adjusted */
+            font-size: 1vw; /* Adjusted */
             background-color: #321f4c;
             color: #ffffff;
             border: none;
@@ -51,8 +72,6 @@
         .item8 {grid-area: footer;
         background-color: #8e7cc3ff;}
 
-      
-
         .grid-container{
             display: grid;
             grid-template-areas: 
@@ -61,15 +80,13 @@
             'left1  center1  right1'
             'footer footer  footer';
 
-            gap: 80px;
-            row-gap: 10px;
+            gap: 4vw; /* Adjusted */
+            row-gap: 1vw; /* Adjusted */
             background-color: #d4ccd9ff;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 10px;
+            padding-left: 5vw; /* Adjusted */
+            padding-right: 5vw; /* Adjusted */
+            padding-top: 1vw; /* Adjusted */
         }
-
-    
 
         img {
             width: 100%;
@@ -78,7 +95,7 @@
         a {
             text-decoration: none;
             color: #321f4c;
-            margin-right: 30px;
+            margin-right: 2vw; /* Adjusted */
         }
 
         a:hover {
@@ -91,11 +108,11 @@
 </head>
 <body>
 
-    <div class = "grid-container">
+    <div class="grid-container">
 
-        <div class = "item1">
-            <h1 style="font-size: 55px; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
-            <h3 style="font-size: 35px; text-align: center; background-color: #8970c8ff;">
+        <div class="item1">
+            <h1 style="font-size: 3vw; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+            <h3 style="font-size: 2vw; text-align: center; background-color: #8970c8ff;">
                 <a href="./team">TEAM</a> 
                 <a href="./events">PAST EVENTS</a>
                 <a href="./resources">RESOURCES</a>
@@ -105,41 +122,38 @@
                 <br>
         </div>
 
-        <div class = "item2">
+        <div class="item2">
             <img src="pictures/DSC05396.jpg" alt="team" style="width: 30vw; height: auto;">
         </div>
 
-        <div class = "item3">
-            <h3 style="font-size: 25px;"> CONTACT US</h3>
+        <div class="item3">
+            <h3 style="font-size: 2.5vw;"> CONTACT US</h3>
             <p>Do you have questions about volunteer opportunities or upcoming events? <br>
                 Get in touch! 
-                </p>
-
-                
+                </p> 
         </div>
 
         <div class="item4">
-            <h3 style="font-size: 25px;">EMAIL</h3>
+            <h3 style="font-size: 2.5vw;">EMAIL</h3>
             <p>
                 Leave a message for the IWD Team by filling out this form.<br>
                 <button onclick="window.location.href='https://forms.gle/jVBgfD5Jy2x1azxQ6'">Submit Form</button><br>
-                <br>Media Contact: Submit a media request by emailing us at <a href = "mailto: internationalwomensdaymarch@gmail.com">internationalwomensdaymarch@gmail.com</a>
+                <br>Media Contact: Submit a media request by emailing us at <a href="mailto: internationalwomensdaymarch@gmail.com">internationalwomensdaymarch@gmail.com</a>
             </p>
         </div>
 
-        <div class = "item5">
+        <div class="item5">
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             <div class="elfsight-app-41c369d4-9e19-4321-bcc6-e349b6245810" data-elfsight-app-lazy></div>
         </div>
 
-        <div class ="item6">
+        <div class="item6">
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             <div class="elfsight-app-a50d7a49-c07e-49b9-abc2-f85480d331e7" data-elfsight-app-lazy></div>
         </div>
 
-        <div class = "item8">
-            
-            <p style = "text-align: right; font-size: small; color:#321f4c">We acknowledge that we are located on the Unceded Coast 
+        <div class="item8">    
+            <p style="text-align: right; font-size: 1.5vw; color:#321f4c">We acknowledge that we are located on the Unceded Coast 
                 Salish Territories of the xʷməθkʷəy̓əm (Musqueam), Səl̓ílwətaʔ/<br>
                 Selilwitulh (Tsleil-Waututh), Kwikwitlem (Coquitlam), Kwantlen, Katzie, 
                 Semiahmoo, and Skwxwú7mesh Úxwumixw (Squamish) Peoples.<br> We 
@@ -147,23 +161,6 @@
                 using to protect their land and their communities, <br>and we commit to 
                 dedicating time and resources to working in solidarity.</p>
 
-                <a href="https://www.instagram.com/iwdmarchvan/"><img src = "pictures/ig.png" alt = "ig" style = "width: 2%; height: auto; "></a>
-                <a href="https://www.facebook.com/profile.php?id=100090451010747&mibextid=LQQJ4d"><img src = "pictures/facebook.png" alt = "face" style = "width: 2%; height: auto; "> </a>
-                <a href="https://linktr.ee/iwdvancouver"><img src = "pictures/link.png" alt = "link" style = "width: 2%; height: auto; "></a>
-
-
-        </div>
-
-
-    
-    
-    
-    
-    
-    </div>
-
-
-
-
-</body>
-</html>
+            <a href="https://www.instagram.com/iwdmarchvan/"><img src="pictures/ig.png" alt="ig" style="width: 1.5vw; height: auto; "></a>
+            <a href="https://www.facebook.com/profile.php?id=100090451010747&mibextid=LQQJ4d"><img src="pictures/facebook.png" alt="face" style="width: 1.5vw; height: auto; "> </a>
+            <a href="https://linktr.ee/iwdvancouver"><img src="pictures
