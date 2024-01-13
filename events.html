@@ -10,6 +10,11 @@
         @font-face { 
             font-family: 'Sans'; src: url(fonts/bcsansfont_web/BcSansFont_Web/2023_03_14_BCSans-Light_2g.otf) format("OpenType");
         }
+
+        @font-face {
+        font-family: 'HeaderFont'; src: url(fonts/Abril_Fatface/AbrilFatface-Regular.ttf) format("TrueType");
+         }
+
         body {
             background-color: #d4ccd9ff;
             cursor: url('cursor/woman.png') 13 19.5, move;
@@ -17,44 +22,39 @@
             padding: 0;
             font-family: 'bcsans', Arial, sans-serif;
         }
+
+        h1, h2, h3, h4, h5, h6 {
+        font-family: 'HeaderFont', Arial, sans-serif;
+
+    }
         
         .item1 {grid-area: header;
             font-size: 1vw; 
             text-align: center;            
         }
         .item2 {grid-area: left0;
-            text-align: right;
            
         }
         .item3 {grid-area: center0;
             padding: 0 10vw;
         }
         .item4 {grid-area: left1;
-            text-align: right;
         }
         .item5 {grid-area: left2;
-            text-align: right;
         }
         .item6 {grid-area: left3;
-            text-align: right;
         }
         .item7 {grid-area: left4;
-            text-align: right;
         }
         .item8 {grid-area: left5;
-            text-align: right;
         }
         .item9 {grid-area: left6;
-            text-align: right;
         }
         .item10 {grid-area: left7;
-            text-align: right;
         }
         .item11 {grid-area: left8;
-            text-align: right;
         }
         .item12 {grid-area: left9;
-            text-align: right;
         }
         .item13 {grid-area: footer;
         background-color: #8e7cc3ff;}
@@ -65,16 +65,11 @@
             display: grid;
             grid-template-areas: 
             'header header header '
-            'left0  center0 center0 '
-            'left1  center0  center0'
-            'left2  center0 center0 '
-            'left3  center0  center0'
-            'left4  center0 center0 '
-            'left5  center0  center0'
-            'left6  center0 center0 '
-            'left7  center0  center0'
-            'left8  center0 center0 '
-            'left9  center0  center0'
+            'left0  center0 left4 '
+            'left1  center0  left5'
+            'left2  center0 left6'
+            'left3  center0  left7'
+            'left9  center0 left8 '
             'footer footer  footer';
 
             gap: 2%;
@@ -94,7 +89,7 @@
         a {
             text-decoration: none;
             color: #321f4c;
-            margin-right: 30px;
+            margin-right: 2%;
         }
 
         a:hover {
@@ -113,8 +108,8 @@
                 grid-template-columns: 1fr;
                 grid-template-areas:
                 'header'
-                'left0'
                 'center0'
+                'left0'
                 'left1'
                 'center1'
                 'left2'
@@ -141,6 +136,20 @@
                 padding-right: 2%;
                 padding-top: 1%;
             }
+
+            .item1 a {
+             font-size: 3vw; /* Adjust the font size of the links inside item1 on mobile */
+                }
+
+            p{
+                    font-size: 3vw;
+                }
+            
+            .item2, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11,
+            .item12, .item13{
+                text-align: center;
+                width: 100%;
+            } 
         }
     </style>
 </head>
@@ -149,23 +158,27 @@
     <div class = "grid-container">
 
         <div class = "item1">
-            <h1 style="font-size: 55px; text-align: center; "><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
-            <h3 style="font-size: 35px; text-align: center; background-color: #8970c8ff;">
-                <a href="./team">TEAM</a> 
+            <h1><a href="./index">INTERNATIONAL WOMEN'S DAY MARCH<br/>VANCOUVER</a> </h1>
+            <h3 style="font-size: 2vw; text-align: center; background-color: #8970c8ff;">
+                <a href="./team">ABOUT US</a> 
                 <a href="./events">PAST EVENTS</a>
-                <a href="./resources">RESOURCES</a>
                 <a href="./news">NEWS</a>
                 <a href="./contact">CONTACT US</a>
             </h3>
                 <br>
-                <h1 style="font-size: 35px; text-align: center;">2023 Speaker’s Lineup & Biographies:</h1>
+                <h1 style="font-size: 3vw; text-align: center;">2023 Speaker’s Lineup & Biographies:</h1>
+                <br>
+                <p>The IWD March was held at at the šxʷƛ̓ənəq Xwtl'e7énḵ Square (Vancouver Art Gallery, North Plaza) on 
+                    March 5th, 2023. The event garnered great community support as participants listened to the following 
+                    panel of speakers. After these speeches, we joined together to march around the Vancouver Art Gallery. </p>
                 <br>
         </div>
+
 
         
 
         <div class = "item2">
-            <img src = "pictures/shane.jpg" alt = "shane" style = "width: 20vw; height: auto; "></a>
+            <img src = "pictures/shane.jpg" alt = "shane" style =  "height: auto; "></a>
             <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                 Elder Shane Pointe pictured speaking
             </p>
@@ -173,7 +186,7 @@
         </div>
 
         <div class = "item4">
-            <img src = "pictures/jaylene.jpg" alt = "jaylene" style = "width: 20vw; height: auto; "></a>
+            <img src = "pictures/jaylene.jpg" alt = "jaylene" style =  "height: auto;"></a>
             <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                 Jaylene Tyme pictured speaking
             </p>
@@ -181,7 +194,7 @@
         </div>
 
         <div class = "item5">
-            <img src = "pictures/children.jpg" alt = "children" style = "width: 20vw; height: auto; "></a>
+            <img src = "pictures/children.jpg" alt = "children" style = " height: auto; "></a>
             <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                 Children pictured making signs
             </p>
@@ -189,7 +202,7 @@
         </div>
 
         <div class = "item6">
-            <img src = "pictures/Choir.jpg " alt = "choir" style = "width: 20vw; height: auto; "></a>
+            <img src = "pictures/Choir.jpg " alt = "choir" style = " height: auto; "></a>
             <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                 Choir pictured singing
             </p>
@@ -197,7 +210,7 @@
         </div>
 
         <div class = "item7">
-            <img src = "pictures/crowd.jpg " alt = "crowd" style = "width: 20vw; height: auto; "></a>
+            <img src = "pictures/crowd.jpg " alt = "crowd" style = " height: auto; "></a>
             <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                 Crowd pictured 
             </p>
@@ -205,7 +218,7 @@
         </div>
 
         <div class = "item8">
-            <img src = "pictures/DSC04815.jpg " alt = "Speakers" style = "width: 20vw; height: auto; "></a>
+            <img src = "pictures/DSC04815.jpg " alt = "Speakers" style = " height: auto; "></a>
             <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                 Speakers pictured presenting 
             </p>
@@ -215,7 +228,7 @@
     
 
         <div class = "item9">
-            <img src = "pictures/march 2.jpg " alt = "march2" style = "width: 20vw; height: auto; "></a>
+            <img src = "pictures/march 2.jpg " alt = "march2" style = " height: auto; "></a>
             <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                 March pictured  
             </p>
@@ -224,7 +237,7 @@
 
             
             <div class = "item10">
-                <img src = "pictures/march.jpg " alt = "march" style = "width: 20vw; height: auto; "></a>
+                <img src = "pictures/march.jpg " alt = "march" style = " height: auto; "></a>
                 <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                     March pictured  
                 </p>
@@ -232,7 +245,7 @@
             </div>
 
             <div class = "item11">
-                <img src = "pictures/picture.jpg " alt = "pic" style = "width: 20vw; height: auto; "></a>
+                <img src = "pictures/picture.jpg " alt = "pic" style = " height: auto; "></a>
                 <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                     Bystander pictured  
                 </p>
@@ -240,7 +253,7 @@
             </div>
 
             <div class = "item12">
-                <img src = "pictures/us.jpg " alt = "us" style = "width: 20vw; height: auto; "></a>
+                <img src = "pictures/us.jpg " alt = "us" style = " height: auto; "></a>
                 <p style="text-align: center; font-style: italic; font-size: 14px; margin-top: 10px;">
                     IWD team pictured  
                 </p>
